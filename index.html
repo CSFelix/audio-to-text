@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSFelix - Audio to Text Converter</title>
+
+		<!-- logotipo -->
+		<link rel="icon" href="./assets/logo.avif" />
+		<link rel="apple-touch-icon" href="./assets/logo.avif">
+
+		<!-- metas -->
+		<meta charset="utf-8" />
+		<meta http-equiv="content-language" content="en" />
+		<meta name="theme-color" content="#7159c1" />
+		<meta name="author" content="@CSFelix" />
+		<meta name="keywords" content="html, html5, css, css3, javascript, js, audio to text converter, audio, mic, microphone, projects, programming, computing, csfelix, github" />
+		<meta name="description" content="Convert audio into text 🔊" />
+		<meta property="og:image" content="./assets/logo.avif" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+		<!-- css libraries -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" type="text/css" href="./css/libraries/vanillatoasts.css" />
+		<link rel="stylesheet" type="text/css" href="./css/libraries/hint.min.css" />
+
+		<!-- css styles -->
+		<link rel="stylesheet" type="text/css" href="./css/styles/global.css" />
+		<link rel="stylesheet" type="text/css" href="./css/styles/sections.css" />
+		
+
+		<!-- js libraries -->
+		<script type="text/javascript" src="./js/libraries/vanillatoasts.js" defer></script>
+
+		<!-- js scripts -->
+		<script type="text/javascript" src="./js/scripts/main.js" defer></script>
+	</head>
+
+	<body>
+
+		<!--
+			****************** 
+			** Main Section **
+			******************
+		 -->
+		<section id="mainSection">
+
+
+			<!--
+				************************* 
+				** Secondary Container **
+				*************************
+			 -->
+			<div id="secondaryContainer">
+				
+
+
+				<!--
+					******************** 
+					** Section 1 Area **
+					********************
+				 -->
+				<div id="section1Area">
+					<div id="titleContainer">
+						<h1 id="titleText">🔊 Audio to Text Converter</h1>
+					</div>
+
+					<div id="converterArea">
+						<div id="extractorTextContainer">
+							<div id="extractedTextContainer">
+								<span id="extractedTextField"></span>
+
+								<span id="copyExtractedText" class="material-icons hint--bottom hint--bounce" aria-label="Copy">content_copy</span>
+							</div>
+						</div>
+
+						<!-- 
+							- mic
+							- settings_voice
+							- mic_off
+						 -->
+						<div id="recordButtonContainer">
+							<span id="recordButton" class="material-icons hint--bottom hint--bounce" aria-label="Start Recording">mic</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!--
+					******************* 
+					** Section 2 Area **
+					*******************
+				 -->
+				<div id="section2Area">
+					<div id="languageSelectorContainer">
+						<select name="languageSelector" id="languageSelector">
+						    <option value="en-US" selected>English (US)</option>
+						    <option value="ja-JP">Japanese</option>
+							<option value="pt-BR">Portuguese (Brazil)</option>
+						</select>
+
+						<span id="languageSpan">Choose the audio language!</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
