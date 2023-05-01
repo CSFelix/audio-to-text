@@ -136,12 +136,14 @@
 	user-select: none;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+
+	gap: 5px;
 }
 
-#recordButton {
+#recordButton, #cleanTextButton {
 	color: #f6f6ff;
 	background-color: #363636;
 	border-radius: 50%;
@@ -152,9 +154,23 @@
 	transition: all 0.3s ease;
 }
 
-#recordButton:hover {
+#recordButton:hover, #cleanTextButton:hover {
 	opacity: 1;
 	transform: translateY(-2px);
+}
+
+
+@keyframes flickerAnimation {
+	0% { opacity: 0.75 }
+	50% { opacity: 1 }
+	100% { opacity: 0.75 }
+}
+
+.recordButtonRecordingStatus {
+	-webkit-animation: flickerAnimation 2s infinite;
+	-moz-animation: flickerAnimation 2s infinite;
+	-o-animation:  flickerAnimation 2s infinite;
+	animation:  flickerAnimation 2s infinite;
 }
 
 
